@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght.woff') format('woff'),
+         url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PlayfairDisplayItalic";
+    src: url('/src/assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.woff2') format('woff2'),
+        url('/src/assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.woff') format('woff'),
+        url('/src/assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('/src/assets/fonts/Montserrat-VariableFont_wght.woff2') format('woff2'),
+        url('/src/assets/fonts/Montserrat-VariableFont_wght.woff') format('woff'),
+        url('/src/assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MontserratItalic";
+    src: url('/src/assets/fonts/Montserrat-Italic-VariableFont_wght.woff2') format('woff2'),
+        url('/src/assets/fonts/Montserrat-Italic-VariableFont_wght.woff') format('woff'),
+        url('/src/assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@theme {
+    /* Grays */
+    --color-grays-0: #fff;
+    --color-grays-25: #FEFDFB;
+    --color-grays-50: #F8F5F9;
+    --color-grays-75: #F8F3F3;
+    --color-grays-100: #ECEEF2;
+    --color-grays-125: #E6E7E7;
+    --color-grays-150: #E2E6EB;
+    --color-grays-175: #E5E0E0;
+    --color-grays-200: #D8DDE5;
+    --color-grays-250: #D1D4D8;
+    --color-grays-300: #C5CDD7;
+    --color-grays-400: #B1BCCA;
+    --color-grays-500: #9EABBD;
+    --color-grays-600: #7E8997;
+    --color-grays-700: #5F6771;
+    --color-grays-800: #3F444C;
+    --color-grays-850: #2F3339;
+    --color-grays-900: #202226;
+    --color-grays-950: #101113;
+    --color-grays-1000: #000101;
+
+    /* Reds */
+    --color-red-50: #FDE9E9;
+    --color-red-100: #FBD3D3;
+    --color-red-150: #F9BDBD;
+    --color-red-200: #F7A7A7;
+    --color-red-300: #F47C7B;
+    --color-red-400: #F0504F;
+    --color-red-500: #EC2423;
+    --color-red-600: #BD1D1C;
+    --color-red-650: #A11920;
+    --color-red-700: #8E1615;
+    --color-red-800: #5E0E0E;
+    --color-red-850: #470B0B;
+    --color-red-900: #2F0707;
+    --color-red-950: #180404;
+
+    /* Beige */
+    --color-beige-50: #FFF8F2;
+    --color-beige-100: #FFF2E5;
+    --color-beige-150: #FFEBD7;
+    --color-beige-200: #FFE4CA;
+    --color-beige-250: #F1DAC4;
+    --color-beige-300: #FFD7B0;
+    --color-beige-400: #FFC995;
+    --color-beige-500: #FFBC7B;
+    --color-beige-600: #DC9E62;
+    --color-beige-700: #BA814A;
+    --color-beige-800: #976331;
+    --color-beige-850: #865425;
+    --color-beige-900: #754619;
+    --color-beige-950: #63370C;
+    --color-beige-950: #522800;
+
+    /* Fonts */
+    --font-sans: 'Montserrat', 'sans-serif';
+    --font-serif:'PlayfairDisplay', 'serif';
+}
