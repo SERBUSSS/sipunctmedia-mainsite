@@ -593,23 +593,11 @@
       max-width: 96rem;
     }
   }
-  .my-2 {
-    margin-block: calc(var(--spacing) * 2);
-  }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
-  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
-  }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
-  .mb-4 {
-    margin-bottom: calc(var(--spacing) * 4);
   }
   .block {
     display: block;
@@ -760,11 +748,14 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
-  .border-grays-300 {
-    border-color: var(--color-grays-300);
+  .border-\[\#c4ccd7\] {
+    border-color: #c4ccd7;
   }
   .border-transparent {
     border-color: transparent;
+  }
+  .bg-\[\#e5e0e0\] {
+    background-color: #e5e0e0;
   }
   .bg-beige-50 {
     background-color: var(--color-beige-50);
@@ -780,9 +771,6 @@
   }
   .bg-grays-75 {
     background-color: var(--color-grays-75);
-  }
-  .bg-grays-175 {
-    background-color: var(--color-grays-175);
   }
   .bg-grays-400 {
     background-color: var(--color-grays-400);
@@ -838,9 +826,6 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
-  .py-8 {
-    padding-block: calc(var(--spacing) * 8);
-  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
@@ -850,26 +835,17 @@
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
-  .pb-1 {
-    padding-bottom: calc(var(--spacing) * 1);
-  }
-  .pb-2 {
-    padding-bottom: calc(var(--spacing) * 2);
-  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
-  }
-  .pb-5 {
-    padding-bottom: calc(var(--spacing) * 5);
-  }
-  .pb-6 {
-    padding-bottom: calc(var(--spacing) * 6);
   }
   .pl-px {
     padding-left: 1px;
   }
   .text-center {
     text-align: center;
+  }
+  .font-\[\'Montserrat\'\] {
+    font-family: 'Montserrat';
   }
   .font-sans {
     font-family: var(--font-sans);
@@ -901,9 +877,6 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-\[26px\] {
-    font-size: 26px;
-  }
   .leading-4 {
     --tw-leading: calc(var(--spacing) * 4);
     line-height: calc(var(--spacing) * 4);
@@ -933,9 +906,6 @@
   .text-beige-900 {
     color: var(--color-beige-900);
   }
-  .text-grays-700 {
-    color: var(--color-grays-700);
-  }
   .text-grays-75 {
     color: var(--color-grays-75);
   }
@@ -957,6 +927,10 @@
   .underline {
     text-decoration-line: underline;
   }
+  .ring {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -976,35 +950,28 @@
       }
     }
   }
-  .hover\:bg-red-500 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-red-500);
-      }
-    }
-  }
 }
 @font-face {
   font-family: "PlayfairDisplay";
-  src: url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'), url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght.woff') format('woff'), url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  src: url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2'), url('/assets/fonts/PlayfairDisplay-VariableFont_wght.woff') format('woff'), url('/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "PlayfairDisplayItalic";
-  src: url('/src/assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.woff2') format('woff2'), url('/src/assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.woff') format('woff'), url('/src/assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  src: url('/assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.woff2') format('woff2'), url('/assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.woff') format('woff'), url('/assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url('/src/assets/fonts/Montserrat-VariableFont_wght.woff2') format('woff2'), url('/src/assets/fonts/Montserrat-VariableFont_wght.woff') format('woff'), url('/src/assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  src: url('/assets/fonts/Montserrat-VariableFont_wght.woff2') format('woff2'), url('/assets/fonts/Montserrat-VariableFont_wght.woff') format('woff'), url('/assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "MontserratItalic";
-  src: url('/src/assets/fonts/Montserrat-Italic-VariableFont_wght.woff2') format('woff2'), url('/src/assets/fonts/Montserrat-Italic-VariableFont_wght.woff') format('woff'), url('/src/assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  src: url('/assets/fonts/Montserrat-Italic-VariableFont_wght.woff2') format('woff2'), url('/assets/fonts/Montserrat-Italic-VariableFont_wght.woff') format('woff'), url('/assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -1113,6 +1080,61 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
 }
 @property --tw-outline-style {
   syntax: "*";
