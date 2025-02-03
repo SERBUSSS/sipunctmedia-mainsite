@@ -24,9 +24,13 @@ function setupForm(form) {
             const data = await response.json();
 
             if (response.ok) {
-                message.innerText = "Te-ai abonat cu succes!";
-                message.style.color = "green";
-                form.reset();
+                // Show success modal
+                const modal = document.getElementById('success-modal');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                
+                // Clear form
+                document.getElementById('email').value = '';
             } else {
                 message.innerText = "Eroare: " + (data.error || "Încercați din nou");
                 message.style.color = "red";
@@ -35,5 +39,14 @@ function setupForm(form) {
             message.innerText = "Eroare la conexiune!";
             message.style.color = "red";
         }
+    });
+
+    // Close modal functionality
+    document.querySelectorAll('[data-modal-hide="success-modal"]').forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = document.getElementById('success-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        });
     });
 }
