@@ -18,7 +18,7 @@ function setupForm(form) {
         try {
             let response = await fetch("https://mailerlite-worker.s1-bustiuc.workers.dev", {
                 method: "POST",
-                mode: "cors", // 🔹 Adaugă această opțiune
+                mode: "cors",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email: email })
             });
