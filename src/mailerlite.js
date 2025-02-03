@@ -1,9 +1,8 @@
 const observer = new MutationObserver(() => {
     let form = document.getElementById("emailForm");
     if (form) {
-        console.log("Formularul a fost găsit!");
         setupForm(form);
-        observer.disconnect(); // Oprire observare după ce a fost găsit
+        observer.disconnect();
     }
 });
 
@@ -18,17 +17,18 @@ function setupForm(form) {
         try {
             let response = await fetch("https://mailerlite-worker.s1-bustiuc.workers.dev", {
                 method: "POST",
-                mode: "cors",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email: email })
             });
 
+            const data = await response.json();
+
             if (response.ok) {
                 message.innerText = "Te-ai abonat cu succes!";
                 message.style.color = "green";
+                form.reset();
             } else {
-                let errorData = await response.json();
-                message.innerText = "Eroare: " + errorData.message;
+                message.innerText = "Eroare: " + (data.error || "Încercați din nou");
                 message.style.color = "red";
             }
         } catch (error) {

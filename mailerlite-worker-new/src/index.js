@@ -10,18 +10,15 @@ export default {
 		  return new Response("Email is required", { status: 400 });
 		}
   
-		const API_KEY = env.MAILERLITE_API_KEY; // API Key este protejat în variabile de mediu
-		const GROUP_ID = env.MAILERLITE_GROUP_ID;
-  
 		const response = await fetch("https://connect.mailerlite.com/api/subscribers", {
 		  method: "POST",
 		  headers: {
 			"Content-Type": "application/json",
-			"Authorization": `Bearer ${API_KEY}`
+			"Authorization": `Bearer ${env.MAILERLITE_API_KEY}`
 		  },
 		  body: JSON.stringify({
 			email: email,
-			groups: [GROUP_ID]
+			groups: [env.MAILERLITE_GROUP_ID]
 		  })
 		});
   

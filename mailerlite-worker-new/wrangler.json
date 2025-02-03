@@ -4,7 +4,7 @@
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mailerlite-worker",
+  "name": "mailerlite-worker-new",
   "main": "src/index.js",
   "compatibility_date": "2025-01-29",
   "observability": {
