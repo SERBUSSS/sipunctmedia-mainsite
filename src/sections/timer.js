@@ -3,7 +3,7 @@ function initializeTimers() {
     const timers = document.querySelectorAll('.timer-container');
     
     function updateTimers() {
-        const endDate = new Date(2025, 1, 6, 23, 59, 59);
+        const endDate = new Date(2025, 1, 14, 23, 59, 59);
         const now = new Date();
         const timeDifference = endDate - now;
         
