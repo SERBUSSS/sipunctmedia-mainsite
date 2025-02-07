@@ -719,6 +719,12 @@
   .basis-0 {
     flex-basis: calc(var(--spacing) * 0);
   }
+  .basis-3 {
+    flex-basis: calc(var(--spacing) * 3);
+  }
+  .basis-3\/5 {
+    flex-basis: calc(3/5 * 100%);
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -1040,6 +1046,9 @@
   .text-center {
     text-align: center;
   }
+  .text-left {
+    text-align: left;
+  }
   .font-sans {
     font-family: var(--font-sans);
   }
@@ -1238,6 +1247,13 @@
       }
     }
   }
+  .md\:max-lg\:items-center {
+    @media (width >= 48rem) {
+      @media (width < 64rem) {
+        align-items: center;
+      }
+    }
+  }
   .md\:max-lg\:px-16 {
     @media (width >= 48rem) {
       @media (width < 64rem) {
@@ -1249,6 +1265,13 @@
     @media (width >= 48rem) {
       @media (width < 64rem) {
         text-align: center;
+      }
+    }
+  }
+  .md\:max-lg\:text-left {
+    @media (width >= 48rem) {
+      @media (width < 64rem) {
+        text-align: left;
       }
     }
   }
@@ -1283,6 +1306,11 @@
       display: inline-flex;
     }
   }
+  .lg\:w-1\/2 {
+    @media (width >= 64rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
   .lg\:basis-1\/3 {
     @media (width >= 64rem) {
       flex-basis: calc(1/3 * 100%);
@@ -1308,9 +1336,34 @@
       flex-direction: row;
     }
   }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
+    }
+  }
+  .lg\:justify-center {
+    @media (width >= 64rem) {
+      justify-content: center;
+    }
+  }
   .lg\:gap-3 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 3);
+    }
+  }
+  .lg\:gap-4 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .lg\:gap-6 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:gap-8 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 8);
     }
   }
   .lg\:gap-10 {
@@ -1331,6 +1384,11 @@
   .lg\:px-36 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 36);
+    }
+  }
+  .lg\:py-12 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 12);
     }
   }
   .lg\:py-20 {
@@ -1356,6 +1414,11 @@
   .lg\:text-center {
     @media (width >= 64rem) {
       text-align: center;
+    }
+  }
+  .lg\:text-left {
+    @media (width >= 64rem) {
+      text-align: left;
     }
   }
   .lg\:text-2xl {
