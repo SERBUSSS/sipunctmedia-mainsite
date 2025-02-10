@@ -895,8 +895,14 @@
   .bg-grays-25 {
     background-color: var(--color-grays-25);
   }
+  .bg-grays-50 {
+    background-color: var(--color-grays-50);
+  }
   .bg-grays-75 {
     background-color: var(--color-grays-75);
+  }
+  .bg-grays-100 {
+    background-color: var(--color-grays-100);
   }
   .bg-grays-175 {
     background-color: var(--color-grays-175);
@@ -1092,9 +1098,6 @@
   }
   .text-\[\#7e8897\] {
     color: #7e8897;
-  }
-  .text-\[\#460a0a\] {
-    color: #460a0a;
   }
   .text-\[\#ff0000\] {
     color: #ff0000;
@@ -1314,19 +1317,9 @@
       width: calc(1/2 * 100%);
     }
   }
-  .lg\:w-full {
-    @media (width >= 64rem) {
-      width: 100%;
-    }
-  }
   .lg\:basis-1\/2 {
     @media (width >= 64rem) {
       flex-basis: calc(1/2 * 100%);
-    }
-  }
-  .lg\:basis-2\/3 {
-    @media (width >= 64rem) {
-      flex-basis: calc(2/3 * 100%);
     }
   }
   .lg\:basis-3\/5 {
