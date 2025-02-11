@@ -1,0 +1,62 @@
+<div class="px-4 justify-center items-center gap-2 inline-flex md:max-lg:px-16 lg:px-36 xl:my-0 xl:mx-auto xl:max-w-[1500px] xl:flex">
+    <div class="grow shrink basis-0 self-stretch py-10 flex-col justify-start items-start gap-10 inline-flex lg:flex-row-reverse">
+        <div class="self-stretch flex-col justify-start items-start gap-4 flex lg:basis-1/2 lg:justify-center">
+            <h3 class="self-stretch text-center text-red-650 text-base font-medium lg:text-xl md:max-lg:text-xl">Începe aventura ta aici...</h3>
+            <p class="self-stretch text-grays-1000] text-lg font-normal lg:text-xl md:max-lg:text-xl">Acest ghid include toată informația de bază pentru ați forma o idee despre SMM și cum să începi corect.</p>
+            <h4 class="self-stretch text-center text-grays-1000] text-2xl font-bold font-serif">Absolut gratuit!</h4>
+            <p class="self-stretch text-grays-1000] text-lg font-normal lg:text-xl md:max-lg:text-xl">Tot ce trebuie să faci este să introduci adresa ta de e-mail, pentru a primi ghidul pe e-mail.</p>
+            <div class="self-stretch flex-col justify-start items-start gap-3 flex">
+                <form id="emailForm" class="self-stretch w-full">
+                    <div class="self-stretch bg-grays-25 rounded-lg border border-[#b98049] justify-start">
+                        <input class="self-stretch text-[#7e8897] py-4 pl-4 pr-[20%] text-lg font-normal" type="email" id="email" required
+                            placeholder="Adresa ta de email">
+                    </div>
+                    <button type="submit" 
+                        class="flex justify-center items-center my-4 w-full bg-red-600 rounded-lg border-transparent border-2 hover:bg-red-500 hover:border-2 hover:border-red-650 text-xl font-sans font-bold text-grays-75 py-2 px-[15%]">
+                        Obține Ghidul Gratuit!
+                    </button>
+                    <div id="message" class="mt-2 text-center"></div>
+                </form>
+            </div>
+            <div id="success-modal" role="dialog" aria-modal="true" tabindex="-1" class="hidden fixed inset-0 z-50">
+                <!-- Overlay -->
+                <div class="fixed inset-0 bg-grays-800/50 "></div>
+                
+                <!-- Modal Container -->
+                <div class="fixed inset-0 overflow-y-auto">
+                    <div class="flex min-h-full items-center justify-center p-4">
+                        <div class="relative bg-white rounded-lg shadow-sm max-w-2xl w-full">
+                            <!-- Modal Header -->
+                            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
+                                <h3 class="text-xl font-semibold text-gray-900">
+                                    Ghidul tău este în drum spre tine! 🚀
+                                </h3>
+                                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="success-modal">
+                                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- Modal Body -->
+                            <div class="p-4 md:p-5 space-y-4">
+                                <p class="text-base leading-relaxed text-gray-500">
+                                    Verifică-ți emailul pentru a descărca ghidul gratuit! 📧
+                                </p>
+                                <p class="text-base leading-relaxed text-gray-500">
+                                    Nu uita să verifici și folderul de Spam dacă nu găsești emailul în Inbox.
+                                </p>
+                            </div>
+                            <!-- Modal Footer -->
+                            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                                <button data-modal-hide="success-modal" type="button" class="w-full text-white bg-red-600 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Am înțeles!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="self-stretch rounded-2xl justify-center items-center inline-flex overflow-hidden lg:basis-1/2">
+            <img class="origin-top-left w-full" src="/src/assets/images/products/BonusFreeGuide.png" />
+        </div>
+    </div>
+</div>
