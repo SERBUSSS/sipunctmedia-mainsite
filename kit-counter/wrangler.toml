@@ -1,0 +1,10 @@
+name = "kit-counter"
+main = "src/index.js"
+compatibility_date = "2025-02-14"
+
+[vars]
+KIT_COUNTDOWN = "worker-KIT_COUNTDOWN"
+
+[[kv_namespaces]]
+binding = "KIT_COUNTDOWN"
+id = "00b36ff98d4446e8af66f229c401bd97"
